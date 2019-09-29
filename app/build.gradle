@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "ms.sapientia.minecraftservertrackerapp"
+        applicationId "mj.minecraft.servertracker"
         minSdkVersion 22
         targetSdkVersion 28
         versionCode 1
@@ -48,4 +48,6 @@ dependencies {
     //Rx-Retrofit Call Adapter
     def rxcall_adapter = "2.5.0"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$rxcall_adapter"
+    testImplementation 'junit:junit:4.12'
+    implementation 'org.jetbrains:annotations-java5:15.0'
 }
